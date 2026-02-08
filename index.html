@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SūtraMitra</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <h1>SūtraMitra</h1>
+          <p>Your daily companion to master the Aṣṭādhyāyī.</p>
+        </div>
+        <nav class="nav">
+          <button class="nav-item" data-route="learn">Learn Mode</button>
+          <button class="nav-item" data-route="revise">Revise Mode</button>
+          <button class="nav-item" data-route="test">Test Mode</button>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="stat">
+            <span class="label">Streak</span>
+            <span id="sidebar-streak" class="value">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">Completed</span>
+            <span id="sidebar-completed" class="value">0</span>
+          </div>
+        </div>
+      </aside>
+      <main class="main">
+        <header class="header">
+          <div>
+            <h2 id="page-title">Learn Mode</h2>
+            <p id="page-subtitle">Focus on today’s sūtras.</p>
+          </div>
+          <div class="header-stats">
+            <div class="stat">
+              <span class="label">Completion</span>
+              <span id="header-completion" class="value">0%</span>
+            </div>
+            <div class="stat">
+              <span class="label">Est. Finish</span>
+              <span id="header-estimate" class="value">—</span>
+            </div>
+          </div>
+        </header>
+        <section id="route-content" class="content"></section>
+      </main>
+    </div>
+    <div id="toast" class="toast" hidden></div>
+    <script src="app.js"></script>
+  </body>
+</html>
